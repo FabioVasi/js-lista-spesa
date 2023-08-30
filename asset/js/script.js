@@ -33,7 +33,17 @@ while (i < 5) {
 
     console.log(elementList);
 
-    shoppingList.push(elementList);
+    if(elementList === null) {
+
+        i--
+
+    } else {
+
+        shoppingList.push(elementList);
+
+        i++
+
+    }
     
     const liEl = document.createElement('li');
     
@@ -42,8 +52,6 @@ while (i < 5) {
     console.log(liEl);
 
     ulEl.append(liEl);
-
-    i++
 
 }
 
