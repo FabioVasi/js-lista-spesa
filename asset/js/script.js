@@ -4,14 +4,27 @@ Data una lista della spesa, stampare sulla pagina (anche brutalmente, basta che 
 Consigli:
 Ricordiamoci di inizializzare la variabile di contatore prima dell'inizio del ciclo while
 Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione di uscita, all'interno ciclo while
+
+Strumenti.
+
+- prompt
+- log
+- const / let
+- while
+- document.createElement
+- document.querySelector
+- array
+- append
+
 */
 
+// creo un array vuoto (dentro il quale andranno gli elementi della lista spesa)
 const shoppingList = []
-
+// grazie al log vedro in console gli elementi della spesa all'interno dell'array una volta inseriti
 console.log(shoppingList);
-
+// creo una costante dentro la quale voglio vedere stampati in pagina gli elementi della lista in pagina
 const ulEl = document.querySelector('ul');
-
+// ciclo while
 let i = 0;
 
 while (i < 5) {
@@ -31,6 +44,6 @@ while (i < 5) {
     ulEl.append(liEl);
 
     i++
-    
+
 }
 
