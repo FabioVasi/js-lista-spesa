@@ -20,7 +20,7 @@ Strumenti.
 */
 
 // creo un array vuoto (dentro il quale andranno gli elementi della lista spesa)
-const shoppingList = []
+const shoppingList = [];
 // grazie al log vedro in console gli elementi della spesa all'interno dell'array una volta inseriti
 console.log(shoppingList);
 // creo una costante dentro la quale voglio vedere stampati in pagina gli elementi della lista in pagina
@@ -28,7 +28,7 @@ const ulEl = document.querySelector('ul');
 // creo un ciclo while dentro il quale chiedo all'utente di inserire dei dati x numero di volte che verranno stampate in console e pagina fino al completamento del ciclo
 let i = 0;
 
-while (i < 5) {
+while (i <= 5) {
     
     console.log(i);
 
@@ -36,7 +36,7 @@ while (i < 5) {
 
     console.log(elementList);
 
-    if(elementList == null || elementList == "") {
+    if(elementList === null && elementList === "") {
 
         alert('please type something');
 
@@ -53,6 +53,8 @@ while (i < 5) {
     const liEl = document.createElement('li');
     
     liEl.append(elementList);
+
+    liEl.style.listStyle = 'none';
 
     console.log(liEl);
 
